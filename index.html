@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tr{
+        background-color: red;
+        color: white;
+        height: 100px;
+        width: 100px;
+        transform:translate(100px,50px);
+        /* transform: rotate(50deg); 
+        transform: scale(.5);
+        transform: skew(10deg) */
+    }
+        input:active + .tr{
+            transform: perspective(100px) translate(20px)scale(.5)rotate(50deg);
+        }
+        .hello{
+        background-color: black;
+        color: white;
+        height: 100px;
+        width: 100px;
+        transform:translate(10px,50px);
+        padding-top: 50px;
+        }
+        .input{
+            padding-top: 100px;
+        }
+        input:active + .hello{
+            transform: perspective(100px) translate(20px)scale(.5)rotate(50deg);
+        }
+       
+
+
+       
+    
+</style>
+<body>
+    <input type="radio" id="input" value="tr" name="tr">
+    <div class="tr">
+        item
+</div>
+    <input type="radio" id="helo">
+    <div class="hello">
+        hello
+
+    </div>
+    
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .skew{
+        background-color: black;
+        color: white;
+        height: 500px;
+        width: 300px;
+        transform: translate(500px)
+        }
+         button:active ~ .hi{
+        transform: perspective(100px) scale(1.5) skew(100deg) rotate(20deg) 
+         }
+         .hi{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            transform: translate(80px,100px);
+
+         }
+</style>
+<body>
+    <table>
+        <div>
+        <th class="skew">
+        <button>Skew</button> 
+        <!-- <div class="hello"></div> -->
+        <button>Scale</button>
+        <!-- <div class="scale"></div> -->
+        <button>Rotate</button>
+        <div class="hi"></div>
+        </th>
+
+        </div>
+    </table>
+    
+</body>
+</html>
